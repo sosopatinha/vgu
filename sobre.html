@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index/css/cssnav.css">
+    <link rel="stylesheet" href="/index/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Poiret+One&family=Righteous&family=Rowdies&display=swap" rel="stylesheet">
+    <title>Quem Somos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #2d1053, #2d1053);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .who-we-are {
+            padding: 50px 0;
+            background: linear-gradient(to bottom, #bea3eb, #2d1053);
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .member {
+            width: 180px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .member p {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .member:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .righteous-regular {
+            font-family: "Righteous", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .kaushan-script-regular {
+            font-family: "Kaushan Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+      <a href="/index/home.html">
+        <img src="/logo/VGU (20).png" alt="Logo do Site">
+      </a>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="/index/home.html">Home</a></li>
+        <li><a href="/index/areas profissionais.html">Como funciona?</a></li>
+        <li><a href="/index/sobre.html">Quem somos?</a></li>
+        <li><a href="/index/user.html">Meu perfil</a></li>
+      </ul>
+      
+      <!-- Redes sociais dentro de uma div -->
+      <div class="redes-sociais-container">
+        <a href="#"><img src="/img/redes (1).png" alt="Instagram"></a>
+        <a href="#"><img src="/img/redes (2).png" alt="Facebook"></a>
+        <a href="#"><img src="/img/redes (3).png" alt="YouTube"></a>
+      </div>
+    </nav>
+
+    <!-- Menu toggle -->
+    <div class="menu-toggle">&#9776;</div> <!-- Ícone de menu -->
+  </header>
+<body>
+  <BR><br><BR><BR><BR><BR><br><BR>
+    <section class="who-we-are">
+        <div class="container">
+            <h1 class="righteous-regular">Quem Somos</h1>
+            <p class="righteous-regular">Somos um grupo de 5 estudantes do curso Tecnólogo em Desenvolvimento de Sistemas da ETEC João Gomes de Araújo - Pindamonhangaba-SP, unidos pela paixão em criar soluções tecnológicas que ajudam as pessoas a se descobrirem. Ao longo de nosso projeto, desenvolvemos uma plataforma de teste vocacional com o objetivo de auxiliar na escolha profissional e trazer mais clareza para aqueles que buscam um caminho certo para suas carreiras. Cada um de nós contribuiu com suas habilidades e conhecimentos para tornar este site uma realidade.</p>
+            <div class="team">
+                <div class="member">
+                    <img src="/img/kadu.jpeg" alt="Criador 1">
+                    <p class="kaushan-script-regular">KADU</p>
+                </div>
+                <div class="member">
+                    <img src="/img/kay.jpeg" alt="Criador 2">
+                    <p class="kaushan-script-regular">KAIANY</p>
+                </div>
+                <div class="member">
+                    <img src="/img/mendes.jpeg" alt="Criador 3">
+                    <p class="kaushan-script-regular">GUILHERME MENDES</p>
+                </div>
+                <div class="member">
+                    <img src="/img/sofia.jpeg" alt="Criador 4">
+                    <p class="kaushan-script-regular">SOFIA</p>
+                </div>
+                <div class="member">
+                    <img src="/img/soares.jpeg" alt="Criador 5">
+                    <p class="kaushan-script-regular">GUILHERME SOARES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>VGU<span>   Vocacional Guiado para Universidade</span></h3>
+      <p class="footer-links">
+        <a href="/index/home.html">Home</a>
+        ·
+        <a href="/index/areas profissionais.html">Como funciona</a>
+        ·
+        <a href="/index/sobre.html">Quem Somos?</a>
+        ·
+        <a href="/index/areas profissionais.html">Login/perfil</a>
+        ·
+      </p>
+    <p class="footer-company-name">VGU &copy; 2024</p>
+    </div>
+    <div class="footer-center">
+     <div>
+        <i class="fa fa-phone"></i>
+        <p>+55 (12)XXXXXX</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">contact@VGU.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Sobre a empresa</span>
+        Somos um grupo de 5 estudantes do curso Tecnólogo em Desenvolvimento de Sistemas, empenhados a ajudar futuros estudantes a escolher sua área profissional.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<script src="/index/script/barranav.js"></script>
+</html>

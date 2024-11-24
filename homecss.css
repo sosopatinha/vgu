@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, hsl(44, 100%, 95%), #f6ecff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Removido padding-top */
+}
+
+/* Barra de navegação fixa no topo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.barra-colorida {
+    width: 100%;
+    height: 1100px; /* Altura fixa, ajuste se necessário */
+    background: radial-gradient(circle, rgb(214, 183, 255), #553280);
+    margin-top: 80px; /* Ajuste para compensar a altura da barra de navegação */
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Muda de center para flex-start */
+    width: 100%;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    /* height: 100vh; */ /* Comente ou remova esta linha */
+}
+
+.left-box {
+    
+    font-weight: bold;
+    width: 50%;
+}
+
+.left-box3 {
+    color: #ffffff;
+    font-weight: bold;
+    width: 50%;
+}
+
+
+.left-box2 {
+    text-align: center; 
+    width: 70%; /* ou a largura que desejar */
+    margin: 0 auto; /* Isso centraliza a div em relação ao seu contêiner pai */
+}
+
+
+.left-box span, a{
+    color: #7e53b1;
+}
+
+.left-box2 span, a{
+    color: #7e53b1;
+}
+
+.left-box3 span, a{
+    color: #ffe09e;
+}
+
+.right-box a {
+    color: #8c5ec4;
+    text-decoration: none;
+}
+
+
+
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+    font-size: 40px;
+    text-align:left;
+}
+
+
+.container-imagem {
+    text-align: center;
+    margin-bottom: 0; 
+    color: #ffffff;
+}
+
+.img-cima {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 0; /* Remova ou ajuste este valor */
+    width: 260%;   
+    height: auto;   
+    max-width: 70%;   
+}
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+h2 {
+
+    font-weight: 200;
+    font-style: normal;
+    align-items: center;
+}
+
+.p{
+    font-size: 30%;
+    text-align: justify;
+    align-items: center;
+}
+
+.caixa-arredondada {
+    background: #ffffff;
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(194, 137, 248, 0);
+    text-align: center; 
+    width: 290%;   
+    height: auto;  
+    max-width: 57%;
+}
+
+ul {
+    list-style-type: disc; /* Define o tipo de marcador como ponto */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0 auto; /* Centraliza a lista */
+    display: inline-block; /* Permite que a lista centralize com margin auto */
+    text-align: left; /* Alinha os itens à esquerda */
+    max-width: 600px; /* Define uma largura máxima para a lista */
+}
+
+li {
+    margin: 5px 0; /* Espaçamento entre os itens */
+}
+
+.containerlado {
+    display: flex;
+    justify-content: center; /* Centraliza os blocos dentro da div container */
+    gap: 20px; /* Espaçamento entre os blocos */
+    max-width: 80%; /* Limita a largura máxima da div container */
+}
+
+.box {
+    width: 40%; /* Ajusta a largura para que caibam lado a lado */
+}
+
+.botao-arredondado {
+    display: inline-block; 
+    background: radial-gradient(circle,  #eddaff, #feffae,  #caaf64);
+    color: rgb(0, 0, 0); 
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 15px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    width: 50%; 
+    text-align: center; 
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+
+
+.botao-arredondado:hover {
+    background: radial-gradient(circle,  #e3cbff, #cecf75,  #948761);
+}
+
+/* Estilo padrão para .right-box */
+.right-box {
+    width: 45%; /* Largura padrão para desktops */
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    background-color: #f5f5f5;
+    text-align: justify;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    .right-box {
+        width: 150%; /* Ocupa toda a largura da tela no celular */
+        padding: 15px; /* Reduz o padding para se ajustar ao espaço */
+        font-size: 1rem; /* Tamanho da fonte um pouco menor */
+        line-height: 1.6; /* Mantém um espaçamento entre linhas adequado */
+    }
+
+    .img-cima {
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+        margin-top: 0;
+    }
+
+    .left-box, .left-box3 {
+        width: 100%; /* Ajusta a largura das caixas à tela */
+        text-align: center; /* Centraliza o texto no celular */
+    }
+}
+
+
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .container3 {
+      flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+  
+    .left-box, .right-box {
+      width: 100%; /* Ocupa toda a largura da tela */
+    }
+  
+    /* Outros ajustes para telas menores */
+    .img-cima {
+      width: 100%; /* Ajusta a largura da imagem */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img-cima {
+      width: 100%; /* Faz a imagem ocupar toda a largura da tela em telas menores */
+    }
+  }    
+
+  /* Ajuste para telas menores */
+@media (max-width: 768px) {
+    /* Empilha os elementos e ajusta tamanhos */
+    .container3 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .left-box, .right-box, .left-box3 {
+        width: 100%;
+    }
+
+    /* Ajuste para a imagem */
+    .img-cima {
+        width: 90%; /* Ajuste a largura conforme necessário */
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste para a barra colorida */
+    .barra-colorida {
+        height: auto; /* Permite altura flexível */
+        padding: 20px; /* Adiciona padding para espaçamento interno */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajuste de tamanho para títulos menores */
+        text-align: center;
+    }
+
+    .botao-arredondado {
+        width: auto; /* Permite que o botão seja menor em telas pequenas */
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    .caixa-arredondada {
+        width: 100%; /* Ocupa toda a largura da tela no celular */
+        max-width: 90%; /* Margem para as laterais */
+        padding: 15px; /* Reduz o padding */
+        text-align: justify; /* Para melhor leitura em telas pequenas */
+        font-size: 1rem; /* Ajuste de tamanho da fonte */
+    }
+}
+

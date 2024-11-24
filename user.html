@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="/index/css/cssnav.css">
+    <link rel="stylesheet" href="/index/css/footer.css">
+    <link rel="stylesheet" href="/index/css/usuario.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="/index/home.html">
+            <img src="/logo/VGU (20).png" alt="Logo do Site">
+          </a>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="/index/home p usuario.html">Home</a></li>
+            <li><a href="/index/areas profissionais.html">Como funciona?</a></li>
+            <li><a href="/index/sobre.html">Quem somos?</a></li>
+            <li><a href="/index/user.html">Meu perfil</a></li>
+          </ul>
+          
+          <!-- Redes sociais dentro de uma div -->
+          <div class="redes-sociais-container">
+            <a href="#"><img src="/img/redes (1).png" alt="Instagram"></a>
+            <a href="#"><img src="/img/redes (2).png" alt="Facebook"></a>
+            <a href="#"><img src="/img/redes (3).png" alt="YouTube"></a>
+          </div>
+        </nav>
+  
+        <!-- Menu toggle -->
+        <div class="menu-toggle">&#9776;</div> <!-- Ícone de menu -->
+      </header>
+      <br><br><br><br>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="user-photo.jpg" alt="Foto de Perfil" class="profile-photo" id="changePhotoBtn">
+            <div class="user-info">
+                <h1>João Silva</h1>
+                <p>Email: joao@email.com</p>
+                <p>Data de Nascimento: 01/01/1990</p>
+            </div>
+        </div>
+        
+        <div class="test-results">
+            <h2>Resultado do Teste Vocacional</h2>
+            <ul>
+                <li>Área de Interesse: Tecnologia</li>
+                <li>Profissões Sugeridas: Desenvolvedor de Software, Analista de Dados</li>
+            </ul>
+        </div>
+        
+        <div class="history">
+            <h2>Histórico de Testes</h2>
+            <ul>
+                <li>Teste realizado em: 01/11/2024 - Resultado: Tecnologia</li>
+                <li>Teste realizado em: 01/06/2024 - Resultado: Artes</li>
+            </ul>
+        </div>
+        <div class="profile-actions">
+            <button class="edit-profile" id="editBtn">Editar Perfil</button>
+            <button class="logout">Sair</button>
+        </div>
+    </div>
+
+    <!-- Modal para Trocar Foto de Perfil -->
+    <div class="modal-photo" id="photoModal">
+        <div class="modal-photo-content">
+            <span class="close" id="closePhotoModal">&times;</span>
+            <h2>Escolha uma Foto de Perfil</h2>
+            <div class="photo-options">
+                <img src="/img/icon/icon (1).png" alt="Foto 1" class="photo-option" id="photo1">
+                <img src="/img/icon/icon (2).png" alt="Foto 2" class="photo-option" id="photo2">
+                <img src="/img/icon/icon (3).png" alt="Foto 3" class="photo-option" id="photo3">
+                <img src="/img/icon/icon (4).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (5).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (6).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (7).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (8).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (9).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (10).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (11).png" alt="Foto 1" class="photo-option" id="photo1">
+                <img src="/img/icon/icon (12).png" alt="Foto 2" class="photo-option" id="photo2">
+                <img src="/img/icon/icon (13).png" alt="Foto 3" class="photo-option" id="photo3">
+                <img src="/img/icon/icon (14).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (15).png" alt="Foto 4" class="photo-option" id="photo4">
+                <img src="/img/icon/icon (16).png" alt="Foto 4" class="photo-option" id="photo4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Editar Perfil -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form action="#">
+                <input type="text" id="name" placeholder="Nome Completo">
+                <input type="tel" id="phone" placeholder="Telefone">
+                <input type="text" id="address" placeholder="Endereço">
+                <input type="email" id="email" placeholder="Email">
+                <button classs="button" id="saveChanges">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>VGU<span>   Vocacional Guiado para Universidade</span></h3>
+        <p class="footer-links">
+          <a href="/index/home.html">Home</a>
+          ·
+          <a href="/index/areas profissionais.html">Como funciona</a>
+          ·
+          <a href="/index/sobre.html">Quem Somos?</a>
+          ·
+          <a href="/index/areas profissionais.html">Login/perfil</a>
+          ·
+        </p>
+      <p class="footer-company-name">VGU &copy; 2024</p>
+      </div>
+      <div class="footer-center">
+       <div>
+          <i class="fa fa-phone"></i>
+          <p>+55 (12)XXXXXX</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">contact@VGU.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Sobre a empresa</span>
+          Somos um grupo de 5 estudantes do curso Tecnólogo em Desenvolvimento de Sistemas, empenhados a ajudar futuros estudantes a escolher sua área profissional.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+     
+      <script src="/index/script/barranav.js"></script>
+      <script src="/index/script/modaluser.js"></script>
+</body>
+</html>

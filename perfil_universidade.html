@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Perfil da Universidade</title>
+    <link rel="stylesheet" href="/index/css/usuario.css">
+    <link rel="stylesheet" href="/index/css/cssnav.css">
+    <link rel="stylesheet" href="/index/css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <a href="/index/home.html">
+            <img src="/logo/VGU (20).png" alt="Logo do Site">
+          </a>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="/index/home.html">Home</a></li>
+            <li><a href="/index/areas profissionais.html">Como funciona?</a></li>
+            <li><a href="/index/sobre.html">Quem somos?</a></li>
+            <li><a href="/index/user.html">Meu perfil</a></li>
+          </ul>
+          
+          <!-- Redes sociais dentro de uma div -->
+          <div class="redes-sociais-container">
+            <a href="#"><img src="/img/redes (1).png" alt="Instagram"></a>
+            <a href="#"><img src="/img/redes (2).png" alt="Facebook"></a>
+            <a href="#"><img src="/img/redes (3).png" alt="YouTube"></a>
+          </div>
+        </nav>
+  
+        <!-- Menu toggle -->
+        <div class="menu-toggle">&#9776;</div> <!-- Ícone de menu -->
+      </header>
+
+    <div class="container">
+        <h2>Perfil da Universidade</h2>
+        <div class="universidade-info">
+            <img src="caminho/para/fotoUniversidade.jpg" alt="Foto da Universidade" class="foto-universidade">
+            <div>
+                <h3 class="nome-universidade">Nome da Universidade</h3>
+                <p>Descrição ou outras informações relevantes sobre a universidade.</p>
+            </div>
+        </div>
+
+        <h4>Postagens Recentes:</h4>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>VGU<span>   Vocacional Guiado para Universidade</span></h3>
+          <p class="footer-links">
+            <a href="/index/home.html">Home</a>
+            ·
+            <a href="/index/areas profissionais.html">Como funciona</a>
+            ·
+            <a href="/index/sobre.html">Quem Somos?</a>
+            ·
+            <a href="/index/areas profissionais.html">Login/perfil</a>
+            ·
+          </p>
+        <p class="footer-company-name">VGU &copy; 2024</p>
+        </div>
+        <div class="footer-center">
+         <div>
+            <i class="fa fa-phone"></i>
+            <p>+55 (12)XXXXXX</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">contact@VGU.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>Sobre a empresa</span>
+            Somos um grupo de 5 estudantes do curso Tecnólogo em Desenvolvimento de Sistemas, empenhados a ajudar futuros estudantes a escolher sua área profissional.
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const universidadeId = params.get('id');
+
+            const universidades = [
+                {
+                    id: 1,
+                    nome: "Universidade Exemplo",
+                    foto: "/caminho/para/fotoUniversidade.jpg",
+                    descricao: "A Universidade Exemplo oferece cursos incríveis!"
+                }
+            ];
+
+            const universidade = universidades.find(uni => uni.id == universidadeId);
+
+            if (universidade) {
+                document.title = universidade.nome;
+                document.querySelector('.container h2').innerText = universidade.nome;
+                document.querySelector('.container img').src = universidade.foto;
+                document.querySelector('.container p').innerText = universidade.descricao;
+            }
+        };
+    </script>
+
+    <script src="/index/script/barranav.js"></script>
+</body>
+</html>

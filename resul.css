@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; 
+    margin: 0;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+}
+
+.p {
+    text-align: justify;
+    align-items: center;
+}
+
+ul {
+    list-style-type: disc; 
+    padding: 0; 
+    margin: 0 auto; 
+    text-align: left; 
+    max-width: 600px; 
+}
+
+li {
+    margin: 5px 0; 
+}
+
+.caixa-arredondada {
+    background: linear-gradient(to top, #6638af, #d8c4ff);
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    width: 85%; /* Aumenta a largura */
+    margin: 20px auto; /* Centraliza o container */
+}
+
+.container-imagem {
+    text-align: center; 
+    margin-bottom: 05px;
+}
+
+.img-cima {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: -19%; 
+    width: 100%; /* Ajuste da largura */
+    height: auto; 
+    max-width: 100%;   
+}
+
+.texto-container {
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    padding: 20px; 
+    max-width: 90%; /* Aumenta a largura do texto */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6638af;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2d145c;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-imagem {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-cima {
+        position: absolute;
+        top: 0; /* Alinha a imagem ao topo da página */
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+        width: 120%; /* Ajuste para que a imagem não fique gigante */
+        height: auto;
+    }
+
+    .caixa-arredondada {
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+        margin-top: 250px; /* Ajuste o valor de margem superior se necessário */
+    }
+
+    .texto-container {
+        max-width: 90%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 20px auto; /* Certifique-se de que o conteúdo seja centralizado */
+    }
+
+    h1.staatliches-regular {
+        font-size: 24px;
+    }
+
+    .p, ul, li {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}

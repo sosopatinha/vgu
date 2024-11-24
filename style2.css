@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos do Corpo */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); /* Ajusta a altura do corpo considerando a altura do cabeçalho fixo */
+  
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilos do Contêiner do Formulário */
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  width: 350px;
+  height: auto; /* Ajusta a altura conforme o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+}
+
+/* Ajustar o Formulário */
+form {
+  width: 100%; /* Largura do formulário dentro do contêiner */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos dentro do formulário em coluna */
+}
+
+/* Inputs e Botões */
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 20px; /* Ajusta o espaço acima dos campos */
+  border-radius: 30px; /* Ajusta o arredondamento dos campos */
+  padding: 10px 15px;
+  width: 100%; /* Largura total do campo */
+}
+
+button[type="submit"] {
+  background: #660fc8;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px; /* Espaço acima do botão */
+  cursor: pointer;
+}
+
+/* Ícones dentro dos Inputs */
+i {
+  position: center;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilos dos Botões do Formulário */
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 blueviolet;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: center;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to right, #5956e9, #a963f8);
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+/* Ajustes de Margem dos Campos de Entrada */
+input[type="text"], input[type="password"] {
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 10px 35px 10px 35px;
+  outline: none;
+  width: 100%;
+}
+
+/* Estilos para Checkboxes e Texto Associado */
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+
+.buttonsForm button.active {
+  background-color: #5956e9;
+  color: white;
+}

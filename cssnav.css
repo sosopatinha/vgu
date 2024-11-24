@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, #fff7e0, #ebd4ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    padding-top: 80px; /* Ajusta o espaço superior para compensar a navegação fixa */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-bottom: 0; /* Remover ou ajustar a margem inferior */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 120px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Altera para centralizar os itens */
+    padding: 0; /* Remove qualquer padding extra */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto; /* Centraliza o ul */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens do ul */
+    width: 100%;
+    max-width: 1000px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right, #ffe09e, #be94f5);
+    color: #fff;
+}
+
+.redes-sociais-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.redes-sociais-container img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.redes-sociais-container img:hover {
+    transform: none;
+    filter: none;
+}
+
+/* Media query para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    /* Redes sociais inicialmente escondidas em telas pequenas */
+    .redes-sociais-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul.show .redes-sociais-container {
+        display: flex;
+    }
+}
+
+/* Media query para telas grandes (acima de 768px) */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        display: flex;
+        margin-left: auto;
+    }
+
+    nav {
+        padding-left: 100px;
+    }
+
+    .menu-toggle, .close-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fff7e0, #ebd4ff);
+    color: #333;
+}
+
+.universidade-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-universidade {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nome-universidade {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.profile-container {
+    max-width: 80%;
+    margin: 07% auto;
+    background-color: #ffffff;
+    padding: 04%;
+    border-radius: 05%;
+    box-shadow: 0 4px 20px rgba(35, 3, 71, 0.171);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid  #2d145c;
+    cursor: pointer;
+}
+
+.user-info h1 {
+    font-size: 28px;
+    color:  #2d145c;
+}
+
+.user-info p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.test-results, .history {
+    margin-bottom: 30px;
+}
+
+.test-results h2, .history h2 {
+    font-size: 22px;
+    color:  #2d145c;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9e76df;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2d145c;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Estilo do Modal para Editar Perfil */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    background-color:#9e76df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #9e76df;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #9e76df;
+    cursor: pointer;
+}
+
+/* Estilo do Modal para Trocar Foto */
+
+.modal-photo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+.modal-photo-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+.modal-photo-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.modal, .modal-photo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0; /* A área escurecida começa do topo da tela */
+    width: 100%;
+    height: 100%; /* Ocupa toda a altura da tela */
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px; /* Ajusta o espaço do conteúdo modal */
+}
+
+.modal-content, .modal-photo-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.photo-options {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha para as imagens */
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-options img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.photo-options img:hover {
+    transform: scale(1.1);
+}
+
